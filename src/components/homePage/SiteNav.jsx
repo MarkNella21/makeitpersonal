@@ -151,10 +151,6 @@ function SiteNav() {
           <hr />
         </div>
       </main>
-
-      <footer className="container">
-        <p>&copy; NellaDevelopment 2023-2024</p>
-      </footer>
     </React.Fragment>
   );
 }

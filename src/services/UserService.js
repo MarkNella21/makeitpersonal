@@ -28,7 +28,18 @@ const currentUser = (payload) => {
     };
     return axios(config);
 }
+const getUserById = (id) => {
+    console.log("Current user is Logged in")
 
-const userService = {currentUser, userLogin};
+    const config = {
+        method: "GET",
+        url: endpoint + "/" + id,
+        crossdomain: true,
+        header: header
+    };
+    return axios(config);
+}
+
+const userService = {currentUser, userLogin, getUserById};
 
 export default userService;
