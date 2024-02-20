@@ -22,7 +22,7 @@ useEffect(() => {
     console.log("App is doing something with the userCard");
   }else( console.log("Error has accured in the app level for USER_CARD"))
   userService.currentUser().then(onGetCurrentUserSuccess).catch(onGetCurrentUserError)
-},[])
+},)
 const onGetCurrentUserSuccess = (response) => {
   let userCurrent = response.data.item.id
   console.log(userCurrent)
