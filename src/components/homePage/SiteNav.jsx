@@ -38,40 +38,11 @@ function SiteNav() {
                 </button>
               </li>
               <li className="nav-item">
-                <button className="nav-link px-2 text-white link-button">
-                  Friends
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                  href="#"
-                  className="nav-link px-2 text-white link-button"
-                >
-                  Jobs
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                  href="#"
-                  className="nav-link px-2 text-white link-button"
-                >
-                  Tech Companies
-                </button>
-              </li>
-              <li className="nav-item">
                 <button
                   href="#"
                   className="nav-link px-2 text-white link-button"
                 >
                   Events
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                  href="#"
-                  className="nav-link px-2 text-white link-button"
-                >
-                  Test and Ajax Call
                 </button>
               </li>
             </ul>
@@ -83,10 +54,7 @@ function SiteNav() {
                 Unknow User
               </a>
               <button type="button" className="btn btn-outline-light me-2">
-                Login
-              </button>
-              <button type="button" className="btn btn-warning">
-                Register
+                User Login
               </button>
             </div>
           </div>
@@ -99,12 +67,12 @@ function SiteNav() {
             <div className="container-fluid py-5">
               <h1 className="display-5 fw-bold">Welcome to the site!</h1>
               <p className="col-md-8 fs-4">
-                The button below should make an ajax call when clicked. Look at
-                your task details for more infomation about the specifics.
+                The button below should take you to the about us and give
+                you a snapshot of where it all started!
               </p>
               <p>
                 <button className="btn btn-primary btn-lg">
-                  Make an Ajax Call on Click
+                  About Us
                 </button>
               </p>
             </div>
