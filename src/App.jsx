@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import EventPlanning from './components/events/EventPlanning';
 import SiteNav from './components/homePage/SiteNav';
 import Home from './components/homePage/Home';
 import Footer from './components/Footer';
@@ -52,7 +53,8 @@ const onGetUserIdError = (userIdError) => {
     <React.Fragment>
       <SiteNav user={currentUser}/>
       <Routes>
-        <Route path='/Home' element={<Home user={currentUser}/>}/>
+        <Route path='/' element={<Home user={currentUser}/>}/>
+        <Route path='/eventplanning' element={<EventPlanning/>}/>
       </Routes>
       <Footer/>
     </React.Fragment>

@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../NDLogoCombs.jpg";
+import { Link } from "react-router-dom";
 
 function SiteNav() {
   return (
@@ -38,12 +39,12 @@ function SiteNav() {
                 </button>
               </li>
               <li className="nav-item">
-                <button
-                  href="#"
+                <Link
+                  to="/eventplanning"
                   className="nav-link px-2 text-white link-button"
                 >
                   Events
-                </button>
+                </Link>
               </li>
             </ul>
             <div className="text-end">
@@ -60,65 +61,6 @@ function SiteNav() {
           </div>
         </div>
       </nav>
-
-      <main role="main">
-        <div className="container">
-          <div className="p-5 mb-4 bg-light rounded-3">
-            <div className="container-fluid py-5">
-              <h1 className="display-5 fw-bold">Welcome to the site!</h1>
-              <p className="col-md-8 fs-4">
-                The button below should take you to the about us and give
-                you a snapshot of where it all started!
-              </p>
-              <p>
-                <button className="btn btn-primary btn-lg">
-                  About Us
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <h2>Recomendations</h2>
-              <p>
-                This will be the top three recommendations and links to local business
-              </p>
-              <p>
-                <button className="btn btn-secondary">
-                  View details &raquo;
-                </button>
-              </p>
-            </div>
-            <div className="col-md-4">
-              <h2>Store</h2>
-              <p>
-                This will be for the products for sale or for order
-              </p>
-              <p>
-                <button className="btn btn-secondary">
-                  View details &raquo;
-                </button>
-              </p>
-            </div>
-            <div className="col-md-4">
-              <h2>More Information</h2>
-              <p>
-                This will be for requesting quotes or any information 
-                of services and needs that will be filled with our skills
-              </p>
-              <p>
-                <button className="btn btn-secondary">
-                  View details &raquo;
-                </button>
-              </p>
-            </div>
-          </div>
-
-          <hr />
-        </div>
-      </main>
     </React.Fragment>
   );
 }
