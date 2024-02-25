@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Card, CardHeader } from "react-bootstrap";
-import { CardDeck } from "reactstrap";
+import { Button, Card, CardGroup } from "react-bootstrap";
 const Home = () => {
 
     return(
@@ -22,9 +21,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-          <CardDeck>
+        <CardGroup className="col">
             <Card>
-              <CardHeader>Recomendations</CardHeader>
+              <h2>Recomendations</h2>
               <Card.Body>
                 <Card.Text>
                 This will be the top three recommendations and links to local business
@@ -61,7 +60,7 @@ const Home = () => {
               </p>
               </Card.Body>
             </Card>
-          </CardDeck>
+        </CardGroup>
 
           <hr />
       </main>
